@@ -10,3 +10,5 @@ Requirements: Putty, Xming
 
 ## Configure X11 forwarding for Putty
 ![](https://github.com/HenglinShi/CaffeInstallationScript/blob/master/PUTTYX11.png)
+
+Then you connect the Taito-GPU server with Putty again.
