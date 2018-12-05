@@ -9,7 +9,7 @@ export PYTHONPATH=$PYTHONPATH:$THE_PATH_OF_YOUR_PROJECT_FOLDER
 srun -N 1 -n 1 --mem-per-cpu=48000 -t72:00:00 --gres=gpu:p100:1 -p gpu python Blstm_rawJoint.py
 ```
 
-The second line will add your project directory to the PYTHONPATH, so that you own functions can be called.
+The second line will add your project directory to the PYTHONPATH, so that you own functions can be called properly.
 
 
 # 2. Submit Batch Job
