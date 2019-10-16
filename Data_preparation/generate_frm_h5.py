@@ -18,18 +18,12 @@ import scipy.io as sio
 import h5py
 import time
 
-video_data_dir = '/wrk/yangruij/DONOTREMOVE/git/BioVid_multimodal/data/Biodevkit/cropped_frm'
-out_h5py = '/wrk/yangruij/DONOTREMOVE/git/BioVid_multimodal/data/biovid_cropfrm_h5/'
+video_data_dir = '../cropped_frm'
+out_h5py = '../biovid_cropfrm_h5/'
 
 def gen_frmh5(usr, vid, users, video):
     vidshape = np.shape(vid)
     usr.create_dataset(name=video, data=vid, shape=vidshape, dtype=np.uint8, compression="gzip", compression_opts=9)
-    
-def shape2points(shape, dtype = 'int', pointNum = 68):
-    coords = np.zeros((pointNum, 2), dtype=dtype)
-    for i in range(0, pointNum):
-        coords[i] = (shape.part(i).x, shape.part(i).y)
-    return coords
     
     
 def crop_face(aug):
