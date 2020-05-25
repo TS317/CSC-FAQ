@@ -1,0 +1,13 @@
+nsight安装pyDev
+
+help -> install New Software
+
+http://pydev.org/update_sites
+
+http://www.pydev.org/update_sites/5.1.2
+
+设置Python 解析路径
+
+Windows -> Preferences ->Interpreters -> Python Interpreter ->New ->
+
+interpreter executable /bin/python2.7
